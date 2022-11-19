@@ -15,6 +15,24 @@ body{
     background-color: #F49D1A;
 }
 
+.header-title{
+    font-size: 35px !important; 
+}
+
+.main-header a{
+    color: #DC3535;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-shadow:  0px 3px 8px  #FFE15D;
+}
+
+.main-header a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 3px 8px #000;
+}
+
 .main-nav{
     display: inline-block;
     width: calc(100% - 80px);
