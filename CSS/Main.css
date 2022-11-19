@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.main-header{
+    background-color: #F49D1A;
+}
+
+.main-nav{
+    display: inline-block;
+    width: calc(100% - 80px);
+    text-align: right;
+}
+
+.main-nav__item{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 8px;
+}
