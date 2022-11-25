@@ -72,3 +72,41 @@ background: url(../HTML/pic/zflix-background.jpg);
 #showcase .content p {
   font-size: 25px;
 }
+
+.row{
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.movie-poster{
+  position: relative;
+  width: 20%;
+  height: 400px;
+  background-position: center;
+  background-size: contain;  
+  background-repeat: no-repeat;
+  /* inline-block yapınca ortaladı */
+  display: inline-block;
+}
+
+.featured-movies__content{
+  margin: 50px 0px 20px;
+}
+
+.movie-1{
+  background-image: url(../HTML/pic/the-conjuring.jpg);
+}
+
+.movie-2{
+  background-image: url(../HTML/pic/death-on-the-nile.jpg);
+  
+}
+
+.movie-3{
+  background-image: url(../HTML/pic/the-notebook.jpg);
+}
+
+.movie-4{
+  background-image: url(../HTML/pic/interstellar.jpg);
+}
