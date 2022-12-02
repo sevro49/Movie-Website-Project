@@ -1,7 +1,19 @@
-.btn-secondary{
-    color: #FFE15D;
+.btn{
+    text-align: center;
     text-decoration: none;
-    background-color: #DC3535;
-    padding: 10px;
+    /* display: inline-block; */ /* when I use, header moves when hover login*/
+    padding: 7px 15px;
+    font-size: 16px;
+    border: none;
     border-radius: 3px;
+    transition-duration: .4s;
+}
+
+.btn-header{
+    color: #f1f6f9 !important;
+}
+
+.btn-header:hover{
+    color: #394867 !important;
+    background-color: #f1f6f9 !important;
 }

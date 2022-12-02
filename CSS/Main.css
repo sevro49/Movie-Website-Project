@@ -33,14 +33,17 @@ main {
   color: #9ba4b4;
   text-decoration: none; /* removes underline*/
   padding: 10px 15px; /* sets Movies etc. background size*/
-  font-size: 25px; /* padding does not enough after some point*/
-  font-family: 'Poppins', sans-serif;
+  font-size: 20px; /* padding does not enough after some point*/
+  font-family: "Poppins", sans-serif;
+}
 
+.page-title{
+  font-size: 30px !important; 
 }
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 90px);
+  width: calc(100% - 101px);
   text-align: right;
 }
 
@@ -57,7 +60,9 @@ main {
 .main-nav__item a:hover {
   color: #f1f6f9;
   background-color: #394867;
+  border-radius: 4px;
   padding: 7px 15px;
+  transition-duration: .4s; /* Make smoother hover*/
 }
 
 #showcase {
