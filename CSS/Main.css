@@ -11,43 +11,57 @@ body {
   width: 1000px;
 }
 
+main {
+  /* when u use this, showcase will go lower.
+  you have to move showcase lover because when 
+  you make header position: fixed, showcase 
+  pretend like header gone. */
+  margin-top: 65px;
+}
+
 .main-header {
-  background-color: #f49d1a;
-  padding: 10px 20px;
+  background-color: #14274e;
+  padding: 8px 16px;
+  position: fixed; /* If u use this, you need 100% width and z-index: 1*/
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
-.header-title {
-  font-size: 35px !important;
-}
-
+/* Sets header element colors */
 .main-header a {
-  color: #dc3535;
-  font-size: 25px;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: bolder;
-  text-shadow: 0px 3px 8px #ffe15d;
-}
+  color: #9ba4b4;
+  text-decoration: none; /* removes underline*/
+  padding: 10px 15px; /* sets Movies etc. background size*/
+  font-size: 25px; /* padding does not enough after some point*/
+  font-family: 'Poppins', sans-serif;
 
-.main-header a:hover {
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 3px 8px #000;
 }
 
 .main-nav {
   display: inline-block;
-  width: calc(100% - 80px);
+  width: calc(100% - 90px);
   text-align: right;
+}
+
+.main-nav__items {
+  margin: 0px;
 }
 
 .main-nav__item {
   display: inline-block;
-  margin-left: 20px;
-  padding: 8px;
+  margin-left: 20px; /* sets the spacing between Movies, TV Shows etc.*/
+  padding: 11px;
+}
+
+.main-nav__item a:hover {
+  color: #f1f6f9;
+  background-color: #394867;
+  padding: 7px 15px;
 }
 
 #showcase {
-background: url(../HTML/pic/zflix-background.jpg);
+  background: url(../HTML/pic/zflix-background.jpg);
   width: 100%;
   height: 70vh;
 }
@@ -73,13 +87,13 @@ background: url(../HTML/pic/zflix-background.jpg);
   font-size: 25px;
 }
 
-.row{
+.row {
   width: 100%;
   margin-top: 10px;
   text-align: center;
 }
 
-.movie-poster{
+.movie-poster {
   position: relative;
   width: 20%;
   height: 400px;
@@ -90,23 +104,22 @@ background: url(../HTML/pic/zflix-background.jpg);
   display: inline-block;
 }
 
-.featured-movies__content{
+.featured-movies__content {
   margin: 50px 0px 20px;
 }
 
-.movie-1{
+.movie-1 {
   background-image: url(../HTML/pic/death-on-the-nile.jpg);
 }
 
-.movie-2{
-  background-image: url(../HTML/pic/death-on-the-nile.jpg);
-  
-}
-
-.movie-3{
+.movie-2 {
   background-image: url(../HTML/pic/death-on-the-nile.jpg);
 }
 
-.movie-4{
+.movie-3 {
+  background-image: url(../HTML/pic/death-on-the-nile.jpg);
+}
+
+.movie-4 {
   background-image: url(../HTML/pic/death-on-the-nile.jpg);
 }

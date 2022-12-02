@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/Main.css" />
     <link rel="stylesheet" href="../CSS/Button.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
     />
     <title>ZFlix</title>
@@ -17,52 +18,52 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#" class="header-title">ZFlix</a>
+        <a href="#">ZFlix</a>
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item">
               <a href="#">Movies</a>
             </li>
-
             <li class="main-nav__item">
               <a href="#">TV Shows</a>
             </li>
-
-            <li class="main-nav__item">
-              <a href="#" class="btn">Login</a>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-outline-secondary" href="#">Login</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="showcase">
-      <div class="content">
-        <h1>Discover the hundreds of Movies and TV Shows</h1>
-        <p>Watch anywhere. Cancel at any time</p>
-        <a href="#" class="btn btn-secondary">Sign Up</a>
-      </div>
-    </section>
-
-    <section id="movies">
-      <div class="featured-movies">
-        <div class="row featured-movies__content">
-          <h2>Featured Movies</h2>
-          <p>Here is this months featured movies</p>
+    <main>
+      <section id="showcase">
+        <div class="content">
+          <h1>Discover the hundreds of Movies and TV Shows</h1>
+          <p>Watch anywhere. Cancel at any time</p>
+          <a href="#" class="btn btn-secondary">Sign Up</a>
         </div>
+      </section>
 
-        <!-- 
+      <section id="movies">
+        <div class="featured-movies">
+          <div class="row featured-movies__content">
+            <h2>Featured Movies</h2>
+            <p>Here is this months featured movies</p>
+          </div>
+
+          <!-- 
         ! If pic's are huge, make them smaller. because big
         ! pic's are not easy to use.
        -->
 
-        <div class="row featured-movies__movie-posters">
-          <div class="movie-poster movie-1"></div>
-          <div class="movie-poster movie-2"></div>
-          <div class="movie-poster movie-3"></div>
-          <div class="movie-poster movie-4"></div>
+          <div class="row featured-movies__movie-posters">
+            <div class="movie-poster movie-1"></div>
+            <div class="movie-poster movie-2"></div>
+            <div class="movie-poster movie-3"></div>
+            <div class="movie-poster movie-4"></div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
