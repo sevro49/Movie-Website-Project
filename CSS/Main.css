@@ -61,7 +61,7 @@ main {
   color: #f1f6f9;
   background-color: #394867;
   border-radius: 4px;
-  padding: 7px 15px;
+  padding: 7px 15px; /* it goes bigger, elements move*/
   transition-duration: .4s; /* Make smoother hover*/
 }
 
