@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+html{
+
+  /* make smoother back to top */
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
 }
@@ -127,4 +133,20 @@ main {
 
 .movie-4 {
   background-image: url(../HTML/pic/death-on-the-nile.jpg);
+}
+
+#backtotop{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+#backtotop i{
+  color: #14274e;
+  font-size: 45px;
+  transition: color .6s;
+}
+
+#backtotop i:hover{
+  color: #394867;
 }
