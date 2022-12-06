@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 
-html{
-
+html {
   /* make smoother back to top */
   scroll-behavior: smooth;
 }
@@ -43,8 +42,8 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
-.page-title{
-  font-size: 30px !important; 
+.page-title {
+  font-size: 30px !important;
 }
 
 .main-nav {
@@ -68,20 +67,30 @@ main {
   background-color: #394867;
   border-radius: 4px;
   padding: 7px 15px; /* it goes bigger, elements move*/
-  transition-duration: .4s; /* Make smoother hover*/
+  transition-duration: 0.4s; /* Make smoother hover*/
 }
 
 #showcase {
-  background: url(../HTML/pic/zflix-background.jpg);
+  background: linear-gradient(
+      to bottom, rgba(154, 124, 124, 0.4),
+      rgba(67, 56, 56, 0.4)
+    ),
+    url(../HTML/pic/zflix-background.jpg);
   width: 100%;
   height: 70vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
 }
 
 #showcase .content {
   /* relative -> it'll be aligned by
     the element one above */
   position: relative;
-  background-color: rba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.389); */
+  padding: 7px 15px;
   margin-left: 20px;
   color: #fff;
   top: 10%;
@@ -100,7 +109,7 @@ main {
 
 .row {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -135,18 +144,18 @@ main {
   background-image: url(../HTML/pic/death-on-the-nile.jpg);
 }
 
-#backtotop{
+#backtotop {
   position: fixed;
   right: 10px;
   bottom: 10px;
 }
 
-#backtotop i{
+#backtotop i {
   color: #14274e;
   font-size: 45px;
-  transition: color .6s;
+  transition: color 0.6s;
 }
 
-#backtotop i:hover{
+#backtotop i:hover {
   color: #394867;
 }

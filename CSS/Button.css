@@ -17,3 +17,14 @@
     color: #394867 !important;
     background-color: #f1f6f9 !important;
 }
+
+.btn-showcase{
+    color: #394867;
+    background-color: #f1f6f9;
+    padding: 10px;
+}
+
+.btn-showcase:hover{
+    color: #f1f6f9;
+    background-color: #9ba4b4;
+}
