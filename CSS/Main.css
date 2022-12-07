@@ -26,7 +26,7 @@ main {
 
 .section-title {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 60px 10px 0px;
   color: #14274e;
   font-size: 30px;
   font-weight: bold;
@@ -34,7 +34,7 @@ main {
 
 .section-content {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 5px 0px -20px;
   color: #14274e;
   font-size: 18px;
   font-weight: bold;
@@ -44,6 +44,11 @@ main {
   width: 100%;
   margin-top: 40px;
   text-align: center;
+}
+
+.col-4 {
+  float: left;
+  width: 25%;
 }
 
 /* 
@@ -134,15 +139,10 @@ main {
   font-size: 25px;
 }
 
+
 /* 
 ! FEATURED MOVIES
  */
-
-.col-4 {
-  float: left;
-  width: 25%;
-}
-
 .card-container {
   /* If you give padding inside .card-container,
   you'll create space between cards, 
@@ -152,6 +152,7 @@ main {
 }
 
 .card {
+  height: 685px; /* Sets card height*/
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -169,22 +170,31 @@ main {
 }
 
 .card-body {
-  padding: 10px 30px;
+  padding: 0px 30px;
   text-align: center;
   margin-bottom: 20px;
   color: #14274e;
   font-family: 'Poppins', sans-serif;}
 
-.card-body h2 {
-  font-size: 22px;
-  font-weight: bold;
-}
-
 .card-body p {
+  margin-top: 0;
   font-weight: 500;
   font-size: 15px;
-  word-break: break-all;
 }
+
+.movie-name{
+  font-size: 18px;
+  font-weight: bold;
+  height: 80px;
+}
+
+.movie-subject{
+
+  /* Makes the subjects of all movies the
+  same height  */
+  height: 150px;
+}
+
 
 .img-fluid {
   /* make it  inactive and see, pics 
