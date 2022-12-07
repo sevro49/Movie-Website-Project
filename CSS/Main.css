@@ -24,6 +24,33 @@ main {
   margin-top: 65px;
 }
 
+.section-title{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #14274e;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.section-content{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #14274e;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+ }
+
+.row {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* 
+! HEADER
+ */
 .main-header {
   background-color: #14274e;
   padding: 8px 16px;
@@ -70,9 +97,13 @@ main {
   transition-duration: 0.4s; /* Make smoother hover*/
 }
 
+/* 
+! SHOWCASE
+ */
 #showcase {
   background: linear-gradient(
-      to bottom, rgba(154, 124, 124, 0.4),
+      to bottom,
+      rgba(154, 124, 124, 0.4),
       rgba(67, 56, 56, 0.4)
     ),
     url(../HTML/pic/zflix-background.jpg);
@@ -82,7 +113,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 }
 
 #showcase .content {
@@ -107,43 +137,59 @@ main {
   font-size: 25px;
 }
 
-.row {
+/* 
+! FEATURED MOVIES
+ */
+
+.col-4 {
+  float: left;
+  width: 25%;
+}
+
+.card-container {
+  /* If you give padding inside .card-container,
+  you'll create space between cards, 
+  If you give inside .card, 
+  you'll create space between movie posters */
+  padding: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all .3s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card-image{
+  max-height: 350px;
+}
+
+.card-body{
+  padding: 10px 30px;
+}
+
+.card-body p{
+  word-break: break-all;
+}
+
+.img-fluid{
+  /* make it  inactive and see, pics 
+  will overflow.
+  
+  width: 100% will make it as it should be*/
   width: 100%;
-  margin-top: 40px;
-  text-align: center;
 }
 
-.movie-poster {
-  position: relative;
-  width: 20%;
-  height: 400px;
-  background-position: center;
-  /* background-size: contain;   */
-  background-repeat: no-repeat;
-  /* inline-block yapınca ortaladı */
-  display: inline-block;
-}
-
-.featured-movies__content {
-  margin: 50px 0px 20px;
-}
-
-.movie-1 {
-  background-image: url(../HTML/pic/death-on-the-nile.jpg);
-}
-
-.movie-2 {
-  background-image: url(../HTML/pic/death-on-the-nile.jpg);
-}
-
-.movie-3 {
-  background-image: url(../HTML/pic/death-on-the-nile.jpg);
-}
-
-.movie-4 {
-  background-image: url(../HTML/pic/death-on-the-nile.jpg);
-}
-
+/* 
+! BACK TO TOP
+ */
 #backtotop {
   position: fixed;
   right: 10px;
