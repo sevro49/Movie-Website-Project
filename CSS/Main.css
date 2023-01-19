@@ -46,6 +46,17 @@ main {
   text-align: center;
 }
 
+.row::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-2{
+  float: left;
+  width: 50%;
+}
+
 .col-4 {
   float: left;
   width: 25%;
@@ -143,6 +154,14 @@ main {
 /* 
 ! FEATURED MOVIES
  */
+
+ #movies{
+
+  /* you have to set height,
+  otherwise sections intertwine*/
+  height: 85vh; 
+ }
+
 .card-container {
   /* If you give padding inside .card-container,
   you'll create space between cards, 
@@ -195,7 +214,6 @@ main {
   height: 150px;
 }
 
-
 .img-fluid {
   /* make it  inactive and see, pics 
   will overflow.
@@ -204,9 +222,20 @@ main {
   width: 100%;
 }
 
+
+/* 
+! UPCOMING SHOWS
+ */
+
+#upcoming-shows{
+  height: 85vh;
+}
+
+
 /* 
 ! BACK TO TOP
  */
+
 #backtotop {
   position: fixed;
   right: 10px;
