@@ -57,6 +57,10 @@ main {
 .col-2 {
   float: left;
   width: 50%;
+
+  /* added this for to centering
+  the upcoming show's banners. */
+  height: 100%;
 }
 
 .col-4 {
@@ -233,27 +237,29 @@ main {
 
 .upcoming-card-container {
   padding: 10px;
-  
 }
 
 .upcoming-card {
   height: 360px;
-  background-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  transition: all 0.3s;
 }
 
-.upcoming-card:hover{
-  transform: translateY(-10px);
+.upcoming-movie-pic {
+  transform: translate(10px, 35px);
 }
 
-.upcoming-card-body{
+.upcoming-card-body {
+  padding: 0px 30px;
   text-align: center;
   color: #14274e;
   font-family: "Poppins", sans-serif;
+}
+
+.upcoming-movie-subject {
+  height: 100px;
+
+  /* to fit paragraph into div */
+  width: fit-content;
+  block-size: fit-content;
 }
 
 /* 
