@@ -32,10 +32,12 @@
 .btn-movies{
     padding: 10px 16px;
     background-color: #14274E;
-    color: #9ba4b4;
+    color: #f1f6f9;
 }
 
 .btn-movies:hover{
-    background-color: #394867;
-    color: #f1f6f9;
+    background-color: #13223f;
+    color: #9ba4b4;
+    
 }
+
